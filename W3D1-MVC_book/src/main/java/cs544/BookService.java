@@ -21,7 +21,8 @@ public class BookService {
     }
 
     public Book get(int id) {
-        return bookDao.findById(id).get();
+//        return bookDao.findById(id).get();
+        return bookDao.getById(id);
     }
 
     public void update(Book book) {
