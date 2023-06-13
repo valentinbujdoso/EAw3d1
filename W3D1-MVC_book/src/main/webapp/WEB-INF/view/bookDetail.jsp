@@ -20,15 +20,15 @@
     </tr>
     <tr>
       <td>ISBN:</td>
-      <td><input type="text" name="isbn" value="${book.ISBN}" /> </td>
+      <td><input type="text" name="ISBN" value="${book.ISBN}" /> </td>
     </tr>
     <tr>
       <td>Author:</td>
-      <td><input type="text" name="year" value="${book.author}" /> </td>
+      <td><input type="text" name="author" value="${book.author}" /> </td>
     </tr>
     <tr>
       <td>Price:</td>
-      <td><input type="text" name="color" value="${book.price}" /> </td>
+      <td><input type="text" name="price" value="${book.price}" /> </td>
     </tr>
   </table>
   <input type="submit" value="${msg}"/>

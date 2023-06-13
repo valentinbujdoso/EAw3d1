@@ -27,6 +27,7 @@ public class BookController {
 
     @PostMapping("/books")
     public String add(Book book) {
+
         bookService.add(book);
         return "redirect:/books";
     }

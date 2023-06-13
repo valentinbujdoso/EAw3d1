@@ -13,22 +13,22 @@ public class BookService {
     private  IBookDao bookDao;
 
     public List<Book> getAll() {
-        return bookDao.getAll();
+        return bookDao.findAll();
     }
 
     public void add(Book book) {
-        bookDao.add(book);
+        bookDao.save(book);
     }
 
     public Book get(int id) {
-        return bookDao.get(id);
+        return bookDao.findById(id).get();
     }
 
     public void update(Book book) {
-        bookDao.update(book);
+        bookDao.save(book);
     }
 
     public void delete(int id) {
-        bookDao.delete(id);
+        bookDao.delete(this.get(id));
     }
 }
